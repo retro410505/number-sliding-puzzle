@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Sliding Puzzle | Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#"><h2>Slide.Theory</h2></a>
+    </header>
+
+    <main>
+      <p class="tagline">Think. Slide. Solve.</p>
+      <h1>
+        One empty space. <br />
+        One perfect order.
+      </h1>
+
+      <div class="hero-msg">
+        <p>Arrange the numbers from one to eight.</p>
+        <p>Can you solve it?</p>
+      </div>
+
+      <div class="stats">
+        <div class="moves label">
+          <span class="lable">Your Moves</span>
+          <p id="moves-count">0</p>
+        </div>
+        <div class="timer label">
+          <span class="label">Time Played</span>
+          <p id="timer-count">00:00</p>
+        </div>
+      </div>
+
+      <div class="board" id="board">
+        
+      </div>
+
+      <p id="msg">Tap a number beside the empty space.</p>
+
+      <div class="controls">
+        <button class="shuffle-btn" id="shuffle-btn">Shuffle</button>
+        <button class="reset-btn" id="reset-btn">Reset</button>
+      </div>
+
+      <div class="how">
+        <h3>How to play</h3>
+        <p>Move one tile at a time into the empty space.</p>
+        <p>Arrange all numbers in ascending order.</p>
+      </div>
+    </main>
+
+    <div class="overlay" id="overlay">
+      <div class="card">
+        <p class="trophy">🏆</p>
+        <h2>Puzzle Solved!</h2>
+        <p class="win-msg">You did it. Every number is in its place.</p>
+        <p class="win-stats">
+          Moves: <span id="win-moves">0</span> · Time:
+          <span id="win-time">00:00</span>
+        </p>
+        <button class="play-again-btn" id="play-again">Play Again →</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
